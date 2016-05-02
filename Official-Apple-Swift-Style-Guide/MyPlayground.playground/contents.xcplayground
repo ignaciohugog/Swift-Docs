@@ -10,5 +10,6 @@
         <page name='Enumerations'/>
         <page name='Classes and structures'/>
         <page name='Properties'/>
+        <page name='Methods'/>
     </pages>
 </playground>
