@@ -11,5 +11,6 @@
         <page name='Classes and structures'/>
         <page name='Properties'/>
         <page name='Methods'/>
+        <page name='Inheritance'/>
     </pages>
 </playground>
