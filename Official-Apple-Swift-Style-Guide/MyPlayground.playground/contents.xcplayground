@@ -8,5 +8,6 @@
         <page name='Functions'/>
         <page name='Clousures'/>
         <page name='Enumerations'/>
+        <page name='Classes and structures'/>
     </pages>
 </playground>

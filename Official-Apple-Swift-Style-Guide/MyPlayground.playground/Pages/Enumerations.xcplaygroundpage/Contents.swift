@@ -88,6 +88,7 @@ let possiblePlanet = Planet(rawValue: 7)
 	case Number(Int)
 	case Addition(ArithmeticExpression, ArithmeticExpression)
 	case Multiplication(ArithmeticExpression, ArithmeticExpression)
+	//functions
 	func sum(){
 
 	}
