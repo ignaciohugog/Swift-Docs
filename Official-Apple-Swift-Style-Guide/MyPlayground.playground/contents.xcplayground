@@ -6,5 +6,7 @@
         <page name='Collection Types'/>
         <page name='ControlFlow'/>
         <page name='Functions'/>
+        <page name='Clousures'/>
+        <page name='Enumerations'/>
     </pages>
 </playground>
