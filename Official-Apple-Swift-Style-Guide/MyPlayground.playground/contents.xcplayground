@@ -12,5 +12,6 @@
         <page name='Properties'/>
         <page name='Methods'/>
         <page name='Inheritance'/>
+        <page name='Initialization'/>
     </pages>
 </playground>
