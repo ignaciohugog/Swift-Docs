@@ -13,5 +13,6 @@
         <page name='Methods'/>
         <page name='Inheritance'/>
         <page name='Initialization'/>
+        <page name='Deinitialization'/>
     </pages>
 </playground>
