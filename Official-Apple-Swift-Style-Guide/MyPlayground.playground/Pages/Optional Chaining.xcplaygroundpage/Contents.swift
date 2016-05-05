@@ -31,4 +31,3 @@ if let roomCount = john.residence?.numberOfRooms {
 //If the type you are trying to retrieve is already optional, it will not become more optional because of the chaining.
 
 
-
