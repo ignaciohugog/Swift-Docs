@@ -17,5 +17,6 @@
         <page name='Arc'/>
         <page name='Optional Chaining'/>
         <page name='Error Handling'/>
+        <page name='Type Casting'/>
     </pages>
 </playground>
