@@ -21,5 +21,8 @@
         <page name='Nested Types'/>
         <page name='Extensions'/>
         <page name='Protocols'/>
+        <page name='Generics'/>
+        <page name='Acces Control'/>
+        <page name='Advanced Operators'/>
     </pages>
 </playground>
