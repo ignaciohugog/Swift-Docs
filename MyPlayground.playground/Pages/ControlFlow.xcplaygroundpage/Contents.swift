@@ -1,16 +1,19 @@
-//: [Previous](@previous)
 
-import Foundation
+// stride
 
-var str = "Hello, playground"
+let minutes = 60
 
-//: [Next](@next)
+for tick in stride(from: 0, to: minutes, by: 5) {
+    print(tick)
+}
+
+
 
 /*
-while
+    while
 */
 
-let arr = [1,2,3,3,3,4,5,5,6,6,7,7,8,87,654,32,3,454,3]
+let arr = [1, 2, 3, 3, 3, 4, 5, 5, 6, 6, 7, 7, 8, 87, 654, 32, 3, 454, 3]
 var B = 0
 var i = 0
 
@@ -27,11 +30,34 @@ repeat {
 	i-=1
 } while i>=0
 
+// if
+let temperatureInCelsius = 25
+let advice: String
+
+if temperatureInCelsius <= 0 {
+    advice = "Very Cold"
+} else if temperatureInCelsius >= 30 {
+    advice = "Warm"
+} else {
+    advice = "Cold"
+}
+
+// More concisee way:
+
+let advice2 = if temperatureInCelsius <= 0 {
+    "Very Cold"
+} else if temperatureInCelsius >= 30 {
+    "Warm"
+} else {
+    "Cold"
+}
+
+
 /*
-switch
+  Switch
 */
 
-//matching many values in case
+// Matching many values in case
 let someCharacter: Character = "e"
 switch someCharacter {
 case "a", "e", "i", "o", "u":
@@ -43,7 +69,7 @@ default:
 	print("\(someCharacter) is not a vowel or a consonant")
 }
 
-//compute all cases with fallthrough
+// Compute all cases with fallthrough
 let integerToDescribe = 5
 var description = "The number \(integerToDescribe) is"
 switch integerToDescribe {
@@ -54,7 +80,7 @@ default:
 	description += " an integer."
 }
 
-//using tuples
+// Using tuples
 let somePoint = (0, 0)
 switch somePoint {
 case (0, 0):
@@ -69,7 +95,7 @@ default:
 	print("(\(somePoint.0), \(somePoint.1)) is outside of the box")
 }
 
-//value bindings
+// Value bindings
 let anotherPoint = (2, 0)
 switch anotherPoint {
 case (let x, 0):
@@ -80,7 +106,7 @@ case let (x, y):
 	print("somewhere else at (\(x), \(y))")
 }
 
-//using where
+// Using where
 let yetAnotherPoint = (1, 1)
 switch yetAnotherPoint {
 case let (x, y) where x == y:
@@ -91,15 +117,14 @@ case let (x, y):
 	print("(\(x), \(y)) is just some arbitrary point")
 }
 
-//labeled statements
+// Labeled statements
 
 infinity: while true {
-	switch i{
+	switch i {
 	case (1...100000000):
 		break infinity
 	default:
-		i = random()
-		i
+        i = Int.random(in: 0...10000)
 	}
 }
 
