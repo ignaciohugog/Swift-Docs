@@ -3,6 +3,7 @@
     <pages>
         <page name='The basics'/>
         <page name='Basic operators'/>
+        <page name='Strings and Characters'/>
         <page name='Collection Types'/>
         <page name='ControlFlow'/>
         <page name='Functions'/>
