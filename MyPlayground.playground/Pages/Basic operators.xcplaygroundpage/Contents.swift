@@ -1,22 +1,18 @@
-//: [Previous](@previous)
-
 import Foundation
 
-var str = "Hello, playground"
 
-//: [Next](@next)
+// Assignation
 
-/*
-===   and !==
-*/
+let (first, second, third) = (1, 2, 3)
+
 
 struct MyStruct {
-	var a:Int
-	var b:Int
-	var c:Int?
+	var a: Int
+	var b: Int
+	var c: Int?
 	init() {
-		a=1; b=2;
-		c = c ?? 3 //c = c != nil ? c! : 3
+		a = 1; b = 2;
+		c = c ?? 3 // c = c != nil ? c! : 3
 	}
 }
 
@@ -43,44 +39,32 @@ classA === classC
 "bd"<"bc"
 
 /*
-Nil coalescing operator (a ?? b)
-unwraps an optional a if it contains a value, or returns a default value b if a is nil
+    Nil coalescing operator (a ?? b)
+    unwraps an optional a if it contains a value, or returns a default value b if a is nil
 */
 
-structA.c //use a nil coalescing operator
+structA.c
 
 /*
-Strings can append characters:
+    Strings can append characters:
 */
-var a:Character = "a"
+var a: Character = "a"
 var s = "hol"
 s.append(a)
 
-/*
-Strings can append characters:
-*/
+// One-Sided Ranges
 
-let multiplier = 3
+let numbers = [1, 2, 3, 4, 5, 6, 7]
 
-let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
-// message is "3 times 2.5 is 7.5”
+for n in numbers[2...] {
+    print(n)
+}
 
-let greeting = "Guten Tag!"
-greeting[greeting.startIndex]
-// G
-greeting[greeting.endIndex.predecessor()]
-// !
-greeting[greeting.startIndex.successor()]
-// u
-let index = greeting.startIndex.advancedBy(7)
-greeting[index]
-// a
+print("=======")
 
-
-greeting.hasPrefix("Gut")
-greeting.hasSuffix("g!")
-
-
+for n in numbers[...2] {
+    print(n)
+}
 
 
 
