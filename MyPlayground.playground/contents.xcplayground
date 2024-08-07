@@ -8,7 +8,6 @@
         <page name='ControlFlow'/>
         <page name='Functions'/>
         <page name='Enumerations'/>
-        <page name='Classes and structures'/>
         <page name='Properties'/>
         <page name='Methods'/>
         <page name='Inheritance'/>
